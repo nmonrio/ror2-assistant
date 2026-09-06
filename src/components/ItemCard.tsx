@@ -7,9 +7,13 @@ interface ItemCardProps {
 function ItemCard({ item }: ItemCardProps) {
   return (
     <div className={`item-card item-card--${item.tier}`}>
-      <div className="item-image-placeholder">
-        {item.name.charAt(0)}
-      </div>
+      <div className="item-image-container">
+        <img
+            src={item.image}
+            alt={item.name}
+            className="item-image"
+        />
+        </div>
 
       <span className="item-name">
         {item.name}
