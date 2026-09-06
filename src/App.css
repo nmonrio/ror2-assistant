@@ -1,0 +1,89 @@
+.app {
+  min-height: 100vh;
+  padding: 24px 32px;
+  background: #111418;
+  color: #f2f2f2;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.app-header p {
+  margin: 4px 0 0;
+  color: #8e969f;
+}
+
+.survivor-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.survivor-selector select {
+  padding: 8px 12px;
+  background: #1d2228;
+  color: white;
+  border: 1px solid #3a414a;
+  border-radius: 6px;
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.filters button {
+  padding: 8px 14px;
+  background: #1d2228;
+  color: #ddd;
+  border: 1px solid #353c44;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.filters button:hover {
+  background: #2b323a;
+}
+
+.dlc-filters {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 16px;
+  margin-bottom: 24px;
+  background: #181c21;
+  border-radius: 8px;
+}
+
+.dlc-filters label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.item-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 12px;
+}
+
+.placeholder-item {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #252b32;
+  border: 1px solid #3a414a;
+  border-radius: 8px;
+}
