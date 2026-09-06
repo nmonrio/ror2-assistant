@@ -1,5 +1,9 @@
 import "./App.css";
 
+import { items } from "./data/items";
+import ItemCard from "./components/ItemCard";
+
+
 function App() {
   return (
     <div className="app">
@@ -58,12 +62,12 @@ function App() {
         </section>
 
         <section className="item-grid">
-          <div className="placeholder-item">Item</div>
-          <div className="placeholder-item">Item</div>
-          <div className="placeholder-item">Item</div>
-          <div className="placeholder-item">Item</div>
-          <div className="placeholder-item">Item</div>
-          <div className="placeholder-item">Item</div>
+          {items.map((item) => (
+            <ItemCard
+              key={item.id}
+              item={item}
+            />
+          ))}
         </section>
       </main>
     </div>
